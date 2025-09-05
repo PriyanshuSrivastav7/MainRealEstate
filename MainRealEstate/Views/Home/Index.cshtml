@@ -1,0 +1,411 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/HomeMaster.cshtml";
+}
+<style>
+    .box1 {
+        height:400px;
+        width:20%;
+        transition:1s;
+        overflow:hidden;
+        
+        
+    }
+   .image {
+       width:100%;
+        display:block;
+        transition:transform 2s;
+    }
+         .image:hover  {
+            
+    transform: scale(1.2);
+  
+}
+    .box2 {
+       background:white;
+    }
+    .box2:hover {
+       background:#BB9632;
+       
+    }
+    .box3 {
+        
+        transition:1s;
+        overflow:hidden;
+     
+    }
+   .box4 {
+        height:300px;
+        display:block;
+        transition:transform 2s;
+        
+    }
+        .box3:hover .box4 {
+            
+    transform: scale(1.2);
+  
+}
+        .box5 {
+    min-height:200px;
+    margin:0 10px;
+    box-shadow:0 0 20px 2px rgba(0,0,0,-1);
+    transition:1s;
+    background:#c1c1c1;
+   
+    border-radius:10px 10px 10px 10px;
+}
+.box5:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+</style>
+<div class="row" style="min-height:100px;background:white"; data-aos="slide-up">
+       
+       <div class="col-sm-12">
+       <h2 style="color:#DEB271;font-size:24px;font-family:'OPTIMA';text-align:center"><span>PINOEERS</span><br /> OF INNOVATIVE & LUXURY LIVING<br /> ESTSBLISHED IN 1988</h2>
+       </div>
+        <br />
+        </div>
+    <br />
+    <br />
+   <p style="color:#2C2E25; font-size:15px;text-align:center">The Shalimar Corp Limited, popularly known as Premium home builders, is a diversified Business House headquartered in Lucknow, Uttar Pradesh, India.<br /><br /> The Group's footprints span sectors such as Real Estate, Property Management, various Highway Infrastructure, Civil Construction and Glass Processing.<br /><br /> An ever growing and expanding business portfolio is the group's hallmark which is steadily establishing itself as a leading Business Conglomerate.</p>
+  <br />
+    <br />
+<span style="font-family:'SF Pro Display';color:#1D1D1F;font-size:32px;text-align:center;padding-left:500px;padding-top:10px">Search Flats & Property</span>
+<br />
+ <input type="text" style="border-radius:5px 5px 5px 5px ;margin-left:400px;border:1px solid black;height:60px;width:500px" placeholder="Search  Here Any Property..........?" /><button type="submit" style="height:60px;width:100px;border:1px solid black"><i class="fa fa-search"></i></button>
+<br />
+
+    <br />
+     <div class="row" data-aos="fade-up">
+
+       <div class="col-sm-4" style="min-height:200px;">
+<h2 style="color:#DEB271;font-size:24px;font-family:'OPTIMA';text-align:center"><span>LUXURY PROPERTY
+BUILDERS IN LUCKNOW</span><br /> OF INNOVATIVE & LUXURY LIVING<br /> ESTSBLISHED IN 1988</h2>
+           <p style="text-align:center;">At Shalimar we craft unparalleled projects designed by world-renowned architects. Our commitment to excellence and innovative designs redefine luxury living. Experience a harmonious blend of opulence and architectural brilliance, setting new benchmarks in Lucknow's real estate realm. Discover your perfect home, meticulously designed and ready for your ideal residence, meticulously crafted and awaiting your presence at the epitome of luxury properties in Lucknow.</p>
+           <button class="box2" style="color:#BB9632;border:2px solid #BB9632;width:200px;height:40px;margin-left:100px;margin-top:100px"><strong>Ongoing Project</strong></button>
+       </div>
+         <div class="col-sm-1"></div>
+       <div class="col-sm-7 box1">
+        <img class="image" src="../Content/img/slide1.jpg" />
+       </div>
+         <br />
+         
+          
+   </div>
+
+<br />
+<br />
+
+<div class="row" data-aos="fade-down">
+    <div class="col-sm-10">
+        <hr width="75%" />
+    </div>
+        <div class="col-sm-2">
+                   <button class="box2" style="color:#BB9632;border:2px solid #BB9632;width:120px;height:40px;"><strong>Read More</strong></button>
+        </div>
+</div>
+<section class="counts">
+<div class="container">
+    <h1 style="color:white;color:red;text-align:center;"><strong>Total Project</strong></h1>
+<div class="row counters">
+    
+<div class="col-sm-3 text center">
+<span data-toggle="counter-up" style="color:#212529;font-family:'lato'">160721</span>
+<p style="color:#212529;font-family:'lato';">Total sq ft of development</p>
+</div>
+<div class="col-sm-3 text center">
+<span data-toggle="counter-up" style="color:#212529;font-family:'lato'">56</span>
+<p style="color:#212529;font-family:'lato'">Total Number of Project</p>
+</div>
+<div class="col-sm-3 text center">
+<span data-toggle="counter-up" style="color:#212529;font-family:'lato'">100</span>
+<p style="color:#212529;font-family:'lato'">Happy familt</p>
+</div>
+<div class="col-sm-3 text center">
+<span data-toggle="counter-up" style="color:#212529;font-family:'lato'">10</span>
+<p style="color:#212529;font-family:'lato'">Upcoming Project</p>
+</div>
+</div>
+</div>
+</section>
+<hr />
+<div class="row" style="min-height:100px;background:white"; data-aos="slide-left">
+       
+       <div class="col-sm-12">
+       <h2 style="color:#DEB271;font-size:30px;font-family:'OPTIMA';text-align:center">PORTFILIO OUR</><br /><span style="font-weight:900">FINEST PROJECT</span></h2>
+       </div>
+    </div>
+<div class="row" data-aos="fade-right">
+    <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="border:1px solid black;min-height:100px;padding-left:90px">
+            <br />
+            <br />
+
+             <select name="location" id="location" style="width:250px;height:30px;margin-left:10px">
+    <option value="volvo">Choose City</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Lucknow">Lucknow</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+  </select>
+            <select name="Project" id="Project" style="width:250px;height:30px;margin-left:10px">
+    <option value="volvo">Select Project Type</option>
+    <option value="Residentail">Residentail</option>
+    <option value="Commercial">Commercial</option>
+    
+  </select>
+             <select name="cars" id="cars" style="width:250px;height:30px;margin-left:10px">
+    <option value="Config">Config</option>
+    <option value="3BHK">3BHK</option>
+    <option value="4BHK">4BHK</option>
+    <option value="Villas">Villas & Pilots</option>
+  </select>
+        </div>
+        <div class="col-sm-1"></div>
+</div>
+<br />
+<div class="row" style="min-height:400px; width:1500px;">
+    <div class="col-sm-1"></div>
+     <div class="col-sm-10">
+         <p  data-aos="fade-right"  style="font-size:35px; color:#BB9632; padding-top:5px;">A City which the Fortunate<br />
+         <b style="color:#62573A; font-size:50px;">Will proudly call home</b></p>
+         <p data-aos="fade-right"  style="text-align:justify; font-size:17px;">On the banks of the river Gomti, is a township which the fortunate will proudly call home. <br />A place where the pure smell of nature will intoxicate and inspire. A place where the laughter of<br /> children will reverberate in lush fields.<br /> A place where exotic tastes of the world delight even the most refined palates.<br /> A place where the beauty of the river is only surpassed by the magnificence of<br /> Luxury Apartments on the banks of the pristine lake. A place where life is complete.</p>
+         <img data-aos="fade-left" style=" height:300px; margin-left:800px; margin-top:-250px;border-radius:50px" src="../Content/img/slide2.jpg" />
+     </div>
+    <div class="col-sm-1">
+
+    </div>
+     <div class="col-sm-1"></div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" style="background:black;">
+        <form action="/Home/Index" method="post">
+            <h1 style="text-align:center; font-family:'Lato'; color:#BB9632;">Room Booking Enquiry Form</h1><br />
+        <input type="text" placeholder=" Enter Name" name="Name" style="height:30px; width:230px; margin-left:80px;" />
+           <select name="MinRent" style="height:30px; width:100px;">
+      <option value="MIN RENT"> MIN RENT </option>
+      <option value="5000"> 5,000 </option>
+      <option value="6000">6,000  </option>
+      <option value="7000"> 7,000  </option>
+               <option value="8000"> 8,000  </option>
+               <option value="9000"> 9,000  </option>
+               <option value="10000"> 10,000  </option>
+               <option value="11000"> 11,000  </option>
+               <option value="12000"> 12,000  </option>
+               <option value="13000"> 13,000  </option>
+                <option value="14000"> 14,000  </option>
+                <option value="15000"> 15,000  </option>
+
+    </select> 
+            <select name="MaxRent" style="height:30px; width:100px;">
+      <option value="MAX RENT"> MAX RENT </option>
+      <option value="25000"> 25,000 </option>
+      <option value="26000">26,000  </option>
+      <option value="27000"> 27,000  </option>
+               <option value="28000"> 28,000  </option>
+               <option value="29000"> 29,000  </option>
+               <option value="30000"> 30,000  </option>
+               <option value="50000"> 50,000  </option>
+               <option value="100000"> 100,000  </option>
+               <option value="150000"> 150,000  </option>
+                <option value="200000"> 200,000  </option>
+                <option value="250000"> 250,000  </option>
+    </select> 
+            <select name="Flat" style="height:30px; width:100px;">
+      <option value="Select Flats & Room">Select Flats & Room</option>
+      <option value="Flats">Flats </option>
+      <option value="House">House</option>
+     
+               
+    </select> 
+            <select name="Perpose" style="height:30px; width:100px;">
+      <option value="Perpose">Perpose</option>
+      <option value="For Personal">For Personal</option>
+      <option value="For Business">For Business</option>
+     
+    </select> 
+            <select name="City" style="height:30px; width:100px;">
+      <option value="Choose City">Choose City</option>
+      <option value="mumbai"> Mumbai </option>
+      <option value="pune"> Pune </option>
+      <option value="banglore"> Banglore </option>
+      <option value="Agar"> Agar </option>
+      <option value="Delhi"> Delhi </option>
+      <option value="Kolkata"> Kolkata </option>
+      <option value="Goa">Goa </option>
+      <option value="Lucknow"> Lucknow </option>
+      <option value="Maharastra"> Maharastra </option>
+      <option value="Kerala"> Kerala </option>
+      <option value="Chennai"> Chennai </option>
+      <option value="Tamilnadu"> Tamilnadu </option>
+      <option value="Hydrabad"> Hydrabad </option>
+    </select> 
+           
+     <input type="number" placeholder="Family Member" name="Number" style="height:30px;width:100px" />
+            <input type="number" placeholder="Mobile" name="Mobile" style="height:30px;width:100px" />
+            <input type="email" placeholder="Email" name="Email" style="height:30px;width:100px;margin-top:50px;margin-left:80px" />
+               <input type="profession" placeholder="profession" name="Profession" style="height:30px;width:100px" />
+                         <span style="color:white"> Arrival Date: </span> <input type="date" placeholder="Enter Arrival Date" name="ArrvDate" style="height:30px;width:100px" />
+                       <span style="color:white"> To Departure Date:</span> <input type="date" placeholder="Enter Departure Date" name="DeptvDate" style="height:30px;width:100px" />
+ <input type="submit" placeholder="Search" class="btn btn-success" style="margin-left:800px; background:#F3AF3D; color:red;" />
+
+            </form>
+        <br />
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+<br />
+<br />
+
+
+<div class="row">
+
+    <div class="col-sm-4 box3" style="min-height:300px;padding-left:40px">
+        <img class="box4" src="../Content/img/about2.jpg" />
+    </div>
+   
+     <div class="col-sm-4 box3" style="min-height:300px;padding-left:40px">
+        <img class="box4" src="../Content/img/real3.jpg" />
+    </div>
+     <div class="col-sm-4 box3" style="min-height:300px;padding-left:40px">
+        <img class="box4" src="../Content/img/real4.jpg" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <h1 style="text-align:center;font-size:22px;font-family:'OPTIMA';color:#2C2F35">4BHK Twenty One<br /><span>Lucknow</span><br /> <span  style="font-size:22px;font-family:'OPTIMA';color:#2C2F35">Price:
+            75000
+        </span></h1>
+       
+    </div>
+     <div class="col-sm-4">
+        <h1 style="text-align:center;font-size:22px;font-family:'OPTIMA';color:#2C2F35">3BHK Pinnacle<br /><span>New delhi<br /></span> <span  style="font-size:22px;font-family:'OPTIMA';color:#2C2F35">Price:
+            50000
+        </span></h1></h1>
+    </div>
+     <div class="col-sm-4">
+        <h1 style="text-align:center;font-size:22px;font-family:'OPTIMA';color:#2C2F35">Flat One Hundred<br /><span>Mumbai</span><br /> <span  style="font-size:22px;font-family:'OPTIMA';color:#2C2F35">Price:
+            87000
+        </span></h1>
+    </div>
+</div>
+<h2 style="text-align:center;font-size:40px;font-family:'OPTIMA';">Visit <span style="color:red">Best</span> Place</h2>
+<div class="row"  style="min-height:300px;background:#f8f9fa">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2 box5" data-aos="flip-left"data-aos-delay="300" style="background-image:url(../Content/img/buld1.jpeg);background-size:cover;">
+
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2 box5" data-aos="flip-right" data-aos-delay="600" style="background-image:url(../Content/img/buld2.jpeg);background-size:cover;"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2 box5" data-aos="flip-down"data-aos-delay="900" style="background-image:url(../Content/img/buld1.jpeg);background-size:cover;"></div>
+    <div class="col-sm-1"></div>
+
+</div>
+<br />
+<br />
+
+<div class="col-sm-3">
+          <img data-aos="fade-left" style=" height:300px; margin-left:40px; margin-top:40px;" src="~/Content/IMG/group1.jpg" />
+     </div>
+    <div class="col-sm-1"></div>
+     <div class="col-sm-1"></div>
+</div>
+
+<div class="row" style="height:40px;">
+    <p data-aos="fade-down" style="font-size:30px; font-family:'Lato';  color:#BB9632;">Here are some Property</p>
+</div> <br />  
+<div class="row" data-aos="fade-up">
+     <div class="col-sm-1"></div>
+     <div class="col-sm-2" style=" min-height:280px;">
+         <img src="~/Content/img/real19.jpg"  class="img img-circle hvr-pulse" style="height:250px;width:100%;border-radius:10px;"></img>
+         <p style="color:black;font-size:15px; text-align:center; text-align:justify"><b>The Nelson House, United States, Canada, Australia, and New Zealand </b></p>
+     </div>
+     <div class="col-sm-2" style=" min-height:250px;">
+         <img  src="~/Content/img/real14.jpg" class="img img-circle hvr-pulse" style="height:250px;width:100%;border-radius:10px;"></img>
+         <p style="color:black;font-size:15px; text-align:center; text-align:justify"><b>The Nelson House, United States, Canada, Australia, and New Zealand </b></p>
+     </div>
+     <div class="col-sm-2" style=" min-height:250px;">
+         <img  src="~/Content/IMG/real16.jpg" class="img img-circle hvr-pulse" style="height:250px;width:100%;border-radius:10px;"></img>
+         <p style="color:black;font-size:15px; text-align:center; text-align:justify"><b>The Nelson House, United States, Canada, Australia, and New Zealand </b></p>
+     </div>
+     <div class="col-sm-2" style=" min-height:250px;">
+         <img  src="~/Content/IMG/real5.jpg" class="img img-circle hvr-pulse" style="height:250px;width:100%;border-radius:10px;"></img>
+         <p style="color:black;font-size:15px; text-align:center; text-align:justify"><b>The Nelson House, United States, Canada, Australia, and New Zealand </b></p>
+     </div>
+     <div class="col-sm-2" style=" min-height:250px;">
+         <img  src="~/Content/IMG/real7.jpg" class="img img-circle hvr-pulse" style="height:250px;width:100%;border-radius:10px;"></img>
+         <p style="color:black;font-size:15px; text-align:center; text-align:justify"><b>The Nelson House, United States, Canada, Australia, and New Zealand </b></p>
+     </div>
+     <div class="col-sm-1"></div>
+</div>
+<br />
+<br />
+
+     
+
+
+<br />
+<br />
+<section id="testimonials" class="testimonials" data-aos="zoom-in" >
+<div class="container">
+<div class="owl-carousel testimonials-carousel">
+<div class="testimonial-wrap" >
+<div class="testimonial-item" style="background-color:hsl(0,25%,90%);box-shadow:2px 10px 9px 3px gray;">
+    <img src="../Content/img/real19.jpg" class="testimonial-img">
+    <p style="font-family:'Baskerville Old Face';font-size:20px;">
+        <h2 style="text-align:center;font-family:'lato';font-size:20px"><b>The house you looked at today and wanted to think about until tomorrow may be the same house someone looked at yesterday and will buy todayb></h2>
+        <br />
+        
+    </p>
+</div>
+</div>
+
+<div class="testimonial-wrap" data-aos="slide-left">
+<div class="testimonial-item" style="background-color:hsl(0,25%,90%);box-shadow:2px 10px 9px 3px gray;">
+    <img src="../Content/img/real12.jpg" class="testimonial-img">
+    <p style="font-family:'Baskerville Old Face';font-size:20px;">
+        <h2 style="text-align:center;font-family:'lato';font-size:20px"><b>The highest levels of success don’t come from more grinding. They come from more alignment.”―Brett Jennings, founder of Real Estate Experts</b></h2>
+        <br />
+       
+    </p>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+<div class="row" data-aos="fade-down">
+    <div class="col-sm-4"></div>
+     <div class="col-sm-4">
+         <p style="font-size:20px; text-align:center;"><b>PROJECT HIGHLIGHTS</b></p>
+     </div>
+     <div class="col-sm-4"></div>
+</div>
+
+<br />
+    <div class="row" style="min-height:300px;">
+        <div class="col-sm-4" data-aos="fade-down">
+              <center>
+           <img style="height:150px;" src="~/Content/img/family.png" />
+                </center>
+           <p style="font-size:20px; text-align:center; padding-top:20px;"><b>Family And Others</b> <br />3 BHK + Servant, 4 BHK + Servant and <br />4 BHK Prime Residences</p>
+        </div>
+         <div class="col-sm-4" data-aos="fade-down">
+             <center>
+           <img style="height:150px;" src="~/Content/img/home.png" />
+                </center>
+           <p style="font-size:20px; text-align:center; padding-top:20px;"><b>Floor Units</b> <br />Two Towers of 22 Floors</p>
+         </div>
+         <div class="col-sm-4" data-aos="fade-down">
+               <center>
+           <img style="height:150px;" src="~/Content/img/locate.png" />
+                </center>
+              <p style="font-size:20px; text-align:center; padding-top:20px;"><b>Location Advantage</b><br />Manor, United State ,Downtown Tiny Treehouse, incredible view</p>
+         </div>
+    </div>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin Panel</title>
+
+    <!-- Bootstrap Css -->
+    <link href="~/Content/dash/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap Css -->
+    <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <!-- Common Css -->
+    <link href="~/Content/dash/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Common Css -->
+
+    <!-- Nav Css -->
+    <link rel="stylesheet" href="~/Content/dash/css/style4.css">
+    <!--// Nav Css -->
+	
+	<!--font awesome 4.0.3-->
+	<link href="~/Content/dash/css/font-awesome.min.css" rel="stylesheet"/>
+	
+    <!-- Fontawesome Css -->
+    <link href="~/Content/dash/css/fontawesome-all.css" rel="stylesheet"/>
+  
+    <!--// Fontawesome Css -->
+
+
+</head>
+        
+<body>
+
+    <div class="wrapper" >
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" style="background:#1A2035">
+            <div style="color:cyan; background:#1A2035" class="sidebar-header">
+                <h1>
+                    <a  href="index.html"  style="font-size:50px;font-family:'OPTIMA';text-align:center;background:#1A2035;color:yellow">Admin</a>
+                </h1>
+                <span style="color:wheat;font-size:30px;font-family:'OPTIMA';">Admin Zone</span>
+            </div>
+            <div class="profile-bg"></div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a style="background-color:#171821;color:wheat;background:#1A2035" href="/AdminZone/Index">
+                        <i class="fas fa-th-large"></i><b> Dashboard</b>
+                    </a>
+                </li>
+                <li>
+                    <a style="background:#171821;color:wheat;background:#1A2035" href="/AdminZone/ChangePassword">
+                        <i class="fas fa-book"></i><b>ChangePassword</b>
+
+                    </a>
+
+                </li>
+                 <li>
+                    <a style="background:#171821;color:wheat;background:#1A2035" href="/AdminZone/ContactMGMT">
+                        <i class="fas fa-book"></i><b>Contact</b>
+
+                    </a>
+
+                </li>
+                 <li>
+                    <a style="background:#171821;color:wheat;background:#1A2035" href="/AdminZone/RegistrationMGMT">
+                        <i class="fas fa-book"></i><b>View Registration</b>
+
+                    </a>
+
+                </li>
+                <li>
+                    <a style="background:#171821;color:wheat;background:#1A2035" href="/AdminZone/BookingMGMT">
+                        <i class="fas fa-book"></i><b>Booking</b>
+
+                    </a>
+
+                </li>
+                <li>
+                    <a style="background:#171821;color:wheat;" href="/AdminZone/logout">
+                        <i class="fas fa-book"></i><b>LogOut</b>
+
+                    </a>
+
+                </li>
+               
+               
+
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content" style="background:#ffffff">
+            <!-- top-bar -->
+            <nav class="navbar navbar-default mb-xl-5 mb-4" style="background:pink" >
+                <div class="container-fluid" >
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                   
+                    <!--// Search-from -->
+                    <ul class="top-icons-agileits-w3layouts float-right">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu drop-3">
+                                <div class="profile d-flex mr-o">
+                                  
+                                    <div class="profile-r align-self-center">
+                                        <h3 class="sub-title-w3-agileits">Will Smith</h3>
+                                        <a href="mailto:info@example.com">info@example.com</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-user mr-3" style="background:#171821"></i>My Profile</h4>
+                                </a>
+                                
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html" style="background:white">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--// top-bar -->
+
+
+            <div class="container-fluid">
+       @RenderBody()
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
+                <p style="background:#171821;font-size:20px;color:white">© 2021 Library Adda24 . All Rights Reserved | Design by Priyanshu Srivastav MMIT BANSI priyanshusrivastav@07
+                    <a href="https://mtechnologies.org/"> Team Mecatradez Technology </a>
+                </p>
+            </div>
+            <!--// Copyright -->
+        </div>
+    </div>
+
+
+
+    <!-- Required common Js -->
+    <script src='~/Content/dash/js/jquery-2.2.3.min.js'></script>
+    <!-- //Required common Js -->
+
+
+
+    <!-- Sidebar-nav Js -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- Js for bootstrap working-->
+    <script src="~/Content/dash/js/bootstrap.min.js"></script>
+    <!-- //Js for bootstrap working -->
+
+</body>
+
+</html>

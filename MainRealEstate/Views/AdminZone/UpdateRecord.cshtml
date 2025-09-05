@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "UpdateRecord";
+    Layout = "~/Views/Shared/AdminZoneMaster.cshtml";
+}
+
+@model MainRealEstate.Models.TBL_Registration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        textarea
+
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container" style="box-shadow:2px 10px 9px 3px gray;">
+        <h2 style="margin-top: -10px;"> Update Registration</h2>
+       
+        <form action="/AdminZone/UpdateRecord/" method="post" >
+            <div class="form-group">
+                <label for="firstName">Full Name</label>
+                <input type="text" id="firstName" value="@Model.Name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Number</label>
+                <input type="text" id="lastName" value="@Model.Mobile" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="@Model.Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Gender</label>
+                <input type="radio" name="Male" value="@Model.Gender"  required> Male
+                <input type="radio" name="Male" value="@Model.Gender"  required>Female
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Address</label>
+                <textarea class="form-control" name="Address" placeholder="Enter Address">@Model.Address</textarea>
+            </div>
+            DOB:<input type="date" value="@Model.DOB" name="DOB" class="form-control"style=" padding: 10px; border: 1px solid #ccc;  border-radius: 3px; box-sizing: border-box;"/><br /><br />
+             Profie<input type="file" value="@Model.Profile" name="Profile" class="form-control" /><br /><br />
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the Terms of Use & Privacy Policy.</label>
+            </div>
+            <button type="submit" class="btn btn-success" style="background: #212529; color:#fff ; font-size: 24px;">Update Registration</button>
+        </form>
+    </div>
+</body>
+</html>

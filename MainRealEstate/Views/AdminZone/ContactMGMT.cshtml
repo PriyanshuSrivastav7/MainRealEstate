@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "ContactMGMT";
+    Layout = "~/Views/Shared/AdminZoneMaster.cshtml";
+}
+
+@model List<MainRealEstate.Models.TBL_Contact1>
+<div class="row" style="background:navy;min-height:100px">
+   <marquee scrollamount="15" behaviour="alternate"> <p style="color:white;font-size:40px;font-family:'lato';padding-top:15px">Contact Display All Record</p></marquee>
+</div>
+<table class="table table-borderd" style="background:yellow">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Mobile No</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Contact Date</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Add</th>
+    </tr>
+    @{
+    foreach(var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+             <td>@x.Name</td>
+             <td>@x.Mobile</td>
+             <td>@x.Email</td>
+             <td>@x.MSG</td>
+             <td>@x.ContactDate</td>
+            
+                <td>
+                   <a href="/AdminZone/delete1?m=@x.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-trash"></span>
+                   </a>=
+               </td>
+                 <td>
+                   <a href="/AdminZone/UpdateRecord?u=@x.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-edit"></span>
+                   </a>
+               </td>
+                 <td>
+                   <a href="/Home/Contact">
+                       <span style="color:red;font-size:30px;" class="icofont-plus"></span>
+                   </a>
+               </td>
+        </tr>
+    }
+        
+    }
+</table>

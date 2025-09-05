@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REALSTATEModelStoreContainer" CdmEntityContainer="REALSTATEEntities">
+    <EntitySetMapping Name="TBL_Booking">
+      <EntityTypeMapping TypeName="REALSTATEModel.TBL_Booking">
+        <MappingFragment StoreEntitySet="TBL_Booking">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MinRent" ColumnName="MinRent" />
+          <ScalarProperty Name="MaxRent" ColumnName="MaxRent" />
+          <ScalarProperty Name="Flat" ColumnName="Flat" />
+          <ScalarProperty Name="Perpose" ColumnName="Perpose" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Profession" ColumnName="Profession" />
+          <ScalarProperty Name="ArrvDate" ColumnName="ArrvDate" />
+          <ScalarProperty Name="DeptvDate" ColumnName="DeptvDate" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Contact1">
+      <EntityTypeMapping TypeName="REALSTATEModel.TBL_Contact1">
+        <MappingFragment StoreEntitySet="TBL_Contact1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MSG" ColumnName="MSG" />
+          <ScalarProperty Name="ContactDate" ColumnName="ContactDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Login">
+      <EntityTypeMapping TypeName="REALSTATEModel.TBL_Login">
+        <MappingFragment StoreEntitySet="TBL_Login">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Registration">
+      <EntityTypeMapping TypeName="REALSTATEModel.TBL_Registration">
+        <MappingFragment StoreEntitySet="TBL_Registration">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

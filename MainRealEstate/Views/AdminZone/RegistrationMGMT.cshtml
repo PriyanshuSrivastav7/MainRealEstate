@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "RegistrationMGMT";
+    Layout = "~/Views/Shared/AdminZoneMaster.cshtml";
+}
+
+@model List<MainRealEstate.Models.TBL_Registration>
+<div class="row" style="background:darkslategray;min-height:100px">
+   <marquee scrollamount="15" behaviour="alternate"> <p style="color:white;font-size:40px;padding-top:15px;font-family:'lato'">Registration Display All Record</p></marquee>
+</div>
+<div class="row" style="background:linear-gradient(Ice Cold,Freeze Purple,Medium Purple,Purple Pain,Heavy Purple)">
+    <table class="table table-borderd">
+
+        <tr style="background:gray;">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>RegDate</th>
+            <th>DOB</th>
+            <th>Profile</th>
+            <th>Delete</th>
+            <th>Update</th>
+            <th>Add</th>
+        </tr>
+
+        @{
+            foreach (var dt in Model)
+                
+            {
+            <tr style="background:yellow">
+                <td>@dt.Id</td>
+                <td>@dt.Name</td>
+                <td>@dt.Mobile</td>
+                <td>@dt.Gender</td>
+                <td>@dt.Email</td>
+                <td>@dt.Address</td>
+                <td>@dt.RegDate</td>
+                <td>@dt.DOB</td>
+                <td> <img src="../Content/imgpro/@dt.Profile" height="50" width="50" /> </td>
+               
+               <td>
+                   <a href="/AdminZone/delete?m=@dt.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-trash"></span>
+                   </a>
+               </td>
+                 <td>
+                   <a href="/AdminZone/UpdateRecord?u=@dt.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-edit"></span>
+                   </a>
+               </td>
+                 <td>
+                   <a href="/Home/Reg">
+                       <span style="color:red;font-size:30px;" class="icofont-plus"></span>
+                   </a>
+               </td>
+            </tr>
+            }
+            
+            
+            }
+
+        </table>
+    </div>

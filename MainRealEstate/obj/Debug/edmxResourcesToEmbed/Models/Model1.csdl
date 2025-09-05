@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="REALSTATEModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="REALSTATEEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_Booking" EntityType="REALSTATEModel.TBL_Booking" />
+    <EntitySet Name="TBL_Contact1" EntityType="REALSTATEModel.TBL_Contact1" />
+    <EntitySet Name="TBL_Login" EntityType="REALSTATEModel.TBL_Login" />
+    <EntitySet Name="TBL_Registration" EntityType="REALSTATEModel.TBL_Registration" />
+  </EntityContainer>
+  <EntityType Name="TBL_Booking">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MinRent" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MaxRent" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Flat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Perpose" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Profession" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ArrvDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeptvDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="BookingDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBL_Contact1">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="MSG" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ContactDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBL_Login">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBL_Registration">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="DOB" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Profile" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="RegDate" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

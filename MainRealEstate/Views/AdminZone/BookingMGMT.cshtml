@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Booking";
+    Layout = "~/Views/Shared/AdminZoneMaster.cshtml";
+}
+
+@model List<MainRealEstate.Models.TBL_Booking>
+<div class="row" style="background:linear-gradient(gold,pink);min-height:100px">
+   <marquee scrollamount="15" behaviour="alternate"> <p style="color:red;font-size:40px">Contact Display All Record</p></marquee>
+</div>
+<table class="table table-borderd" style="background:linear-gradient(cyan,pink)">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>MaxRent</th>
+        <th>MinRent</th>
+        <th>Flat</th>
+        <th>Perpose</th>
+        <th>City</th>
+        <th>Number</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Profession</th>
+        <th>ArrvDate</th>
+        <th>DeptvDate</th>
+        <th>BookingDate</th>
+    </tr>
+    @{
+    foreach(var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+             <td>@x.Name</td>
+             <td>@x.MaxRent</td>
+            <td>@x.MinRent</td>
+            <td>@x.Flat</td>
+            <td>@x.Perpose</td>
+            <td>@x.City</td>
+            <td>@x.Number</td>
+            <td>@x.Mobile</td>
+            <td>@x.Email</td>
+            <td>@x.Profession</td>
+            <td>@x.ArrvDate</td>
+            <td>@x.DeptvDate</td>
+            <td>@x.BookingDate</td>
+            
+                <td>
+                   <a href="/AdminZone/delete2?m=@x.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-trash"></span>
+                   </a>
+               </td>
+                 <td>
+                   <a href="/AdminZone/UpdateRecord?u=@x.Email">
+                       <span style="color:red;font-size:30px;" class="icofont-edit"></span>
+                   </a>
+               </td>
+                 <td>
+                   <a href="/Home/Contact">
+                       <span style="color:red;font-size:30px;" class="icofont-plus"></span>
+                   </a>
+               </td>
+        </tr>
+    }
+        
+    }
+</table>

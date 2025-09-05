@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Reg";
+    Layout = "~/Views/Shared/HomeMaster.cshtml";
+}
+
+<script>
+    function getCaptcha()
+    {
+        var strArr = "01234@56789ABCDEFsjoshpwehpiwuhpiijdow KL";
+        var code = "";
+        for (var i = 0; i < 5; i++)
+        {
+            code = code + strArr[Math.floor(Math.random() * 20)];
+        }
+        return code;
+    }
+    function demo()
+    {
+        var c = getCaptcha();
+        document.getElementById("ct1").innerHTML = c;
+        document.getElementById("hdn1").value = c;
+    }
+</script>
+
+
+
+<div class="row" data-aos="slide-right">
+    <div class="col-sm-4"></div>
+      <div class="col-sm-4" style="border:1px solid black" class="contact-container">
+                    <center><h2 style="color:red;">Registration Page</h2></center><hr>
+                    <form action="/Home/Reg" method="post" enctype="multipart/form-data">
+                       <label style="font-family:'lato';font-weight:100">Name</label><br />
+                        <input type="text" name="Name" placeholder="Enter Name " class="form-control"><br><br>
+                         <label style="font-family:'lato';font-weight:100">Mobile</label><br />
+                        <input type="number"name="Mobile" placeholder="Enter Mobile Number" class="form-control"><br><br>
+                         <label style="font-family:'lato';font-weight:100">Email</label><br />
+                        <input type="email"name="Email" placeholder="Enter Email" class="form-control"><br><br>
+                         <label style="font-family:'lato';font-weight:100">DOB</label><br />
+                        <input type="date" name="DOB" class="form-control" />
+                         <label style="font-family:'lato';font-weight:100">Profile</label><br />
+                       <input type="file"name="Profile" class="form-control"/>
+                        
+                        <label style="font-family:'lato';font-weight:100">Gender</label><br />
+                       <input type="radio"name="Gender"/>Male
+                         <input type="radio"name="Gender"/>Female<br /><br />
+                        <label style="font-family:'lato';font-weight:100">Address</label><br />
+                        <textarea class="form-control" name="Address" placeholder="Enter Address"></textarea>
+                        
+                        <br />
+                        <br />
+                         Captcha <span style="color:red;font-size:20px;"><strike id="ct1">sdd34bd</strike></span>
+     
+                 <span class="icofont-refresh"  style="color:blue;font-size:20px;cursor:pointer;padding-left:10px" onclick="demo()"></span>
+                 <input type="hidden" id="hdn1" name="hdn1" /><br /> 
+                        
+                 <input type="text" name="ct1"  placeholder="entet Captcha code" />
+                          <br />
+                        <br />
+                        <input type="submit" class="btn btn-success form-control"><br><br>
+                         <input type="reset" class="btn btn-danger form-control">
+                    </form>
+                     <div class="modal-footer">
+                    <input type="reset" value="close" class="btn btn-danger" data-dismiss="modal">
+                </div>
+           </div>
+    </div>
+  <div class="col-sm3"></div>

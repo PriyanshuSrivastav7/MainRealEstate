@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Content/css/aos.css" rel="stylesheet">
+    <link href="~/Content/css/Style.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/Content/myprojectstyle.css" rel="stylesheet" />
+    <link href="~/Content/Bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/Bootstrap3/css/hover-min.css" rel="stylesheet">
+    <script src="~/Content/Bootstrap3/js/jquery.js"></script>
+    <script src="~/Content/Bootstrap3/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+
+
+
+    <script>
+        var arrImg = ["../Content/img/slide1.jpg", "../Content/img/slide2.jpg", "../Content/img/slide3.jpg", "../Content/img/slide4.jpg"];
+        var index = 0;
+        function f1() {
+            document.getElementById("imgslider").src = arrImg[index];
+            index++;
+            if (index == arrImg.length) {
+                index = 0;
+            }
+            window.setTimeout("f1()", 3000);
+
+        }
+
+
+       
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .fa {
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:black;
+    text-align:center;
+     padding-top:8px;
+     color:white;
+     text-decoration:none;
+
+}
+.fa:hover {
+                color: black;
+                background:white;
+            }
+        ul li a {
+            text-decoration:none;
+        }
+        li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: blue;
+            transition: width .3s;
+        }
+        li a:hover::after {
+            width:100%;
+            transition:width .3s;
+        }
+
+
+
+
+
+
+        body {
+            overflow-x:hidden;
+        }
+
+    
+    </style>
+  
+</head>
+<body  onload="f1()">
+   <header id="header" class="fixed-top">
+        <div class="container d-flex">
+            <h1 class="logo mr-auto" ><a href="#"><img src="../Content/img/logo1.png" height="50px" width="100px"</a></h1>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="/Home/Index" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">HOME</a></li>
+                    <li><a href="/Home/About" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">About Us</a>
+                        
+                    </li>
+                   
+                    <li><a href="/Home/Projects" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">Projects</a>
+                        
+                    </li>
+               <li><a href="/Home/Clubs" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">Clubs & Mall</a>
+                        
+                    </li>
+                    <li><a href="/Home/Add" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">Member</a></li>
+                    <li  class="drop-down" ><a href="/Home/Media" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">Media</a>
+                      
+                    </li>
+                    <li><a href="/Home/Contact" style="color:#2C2E35;font-size:14px;font-family:'Lato' sans-serif;text-decoration:none">Contact Us</a></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li> <i class="fa fa-facebook"></i></></li>
+                    <li><a href="/Home/Reg" style="text-decoration:none">Reg</a></li>
+                     <li><a href="/Home/Login" style="text-decoration:none">LogIn</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+   
+
+    <div class="row">
+        <div class="col-sm-12" style="background:#c1c1c1;min-height:500px;">
+<img src="../Content/img/real1.jpg" height="500px" width="1290px"  id="imgslider">
+    </div>
+        </div>
+     <br />
+    <br />
+    
+
+    
+
+
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+
+    <br />
+    <footer>
+   <div class="row" style="border:1px solid black">
+    <div class="col-sm-2">
+        <h1 style="text-align:center; font-family:'Lato'; color:#BB9632;">About</h1><br />
+        <a href="#" style="padding-left:70px;">Company </a><br /><br />
+        <a href="#" style="padding-left:70px;">Our Services</a><br /><br />
+        <a href="#" style="padding-left:70px;">Payments Options</a><br /><br />
+        <a href="#" style="padding-left:70px;">Premium Plans</a><br /><br />
+        <a href="#" style="padding-left:70px;">Help Us</a>
+    </div>
+    <div class="col-sm-3">
+        <h1 style="text-align:center;font-family:'Lato'; color:#BB9632;">Project</h1><br />
+        <a href="#" style="padding-left:150px;">2BHK</a><br /><br />
+        <a href="#" style="padding-left:150px;">3BHK</a><br /><br />
+        <a href="#" style="padding-left:150px;">4BHK</a><br /><br />
+        <a href="#" style="padding-left:150px;">5BHK</a>
+       
+    </div>
+    <div class="col-sm-2">
+        <h1  style="text-align:center;font-family:'Lato'; color:#BB9632;">General</h1><br />
+        <a href="#" style="padding-left:70px;">License Terms</a><br /><br />
+        <a href="#" style="padding-left:70px;">Privacy Policy</a><br /><br />
+        <a href="#" style="padding-left:70px;">Refund Policy</a><br /><br />
+         <a href="#" style="padding-left:70px;">Email Tracting</a><br /><br />
+         <a href="#" style="padding-left:70px;">Email Marketing</a><br /><br />
+    </div>
+    <div class="col-sm-1">
+        
+    </div>
+    <div class="col-sm-4">
+       
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6765.611822928042!2d80.95355699999999!3d26.875007699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdd563c25cbf%3A0xbcefbb4f300d416c!2z4KSu4KWI4KSV4KWI4KSf4KWN4KSw4KWH4KSh4KWN4KSc4KS8IOCkn-Clh-CkleCljeCkqOCli-CksuClieCknOClgCDgpKrgpYDgpLXgpYDgpJ_gpYAg4KSP4KSy4KSf4KWA4KSh4KWAIOCksuCkluCkqOCkig!5e1!3m2!1shi!2sin!4v1726352809358!5m2!1shi!2sin" width="400px" height="200px" style="border:0;"></iframe>
+        <h3 style="font-family:'ROBOTO';font-weight:100">Contact Location by Compnay</h3>
+            </div>
+
+       </div>
+      <div class="row">
+          <div class="col-sm-12" style="height:80px;background:#1e1b1b">
+                <p style="text-align:center;font-size:25px;font-family:'Lato';color:white">© 2024 Mecatradz Technology Ltd.</p>
+              <ul style="text-align:center">
+              <a  href="#" style="text-decoration:none;" class="fa fa-facebook"></a>
+                <a  href="#" style="text-decoration:none;margin-left:20px" class="fa fa-instagram"></a>
+                <a  href="#" style="text-decoration:none;margin-left:20px" class="fa fa-twitter"></a>
+        </ul>
+          </div>
+      </div>
+
+
+    </footer>
+    
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.waypoints.min.js"></script>
+    <script src="~/Content/js/counterup.min.js"></script>
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <script src="~/Content/js/aos.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    
+     
+</body>
+</html>
