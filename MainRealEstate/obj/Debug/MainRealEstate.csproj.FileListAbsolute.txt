@@ -27,4 +27,7 @@ C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\bin\System.Web
 C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\bin\System.Web.WebPages.Razor.xml
 C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainRealEstate.dll
 C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainRealEstate.pdb
-C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainRealEstate.csprojResolveAssemblyReference.cache
+C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\bin\MainRealEstate.dll.config
+C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainRealEstate.csproj.AssemblyReference.cache
+C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainRealEstate.csproj.CoreCompileInputs.cache
+C:\Users\priya\OneDrive\Desktop\net\MainRealEstate\MainRealEstate\obj\Debug\MainReal.ED6F91D3.Up2Date
